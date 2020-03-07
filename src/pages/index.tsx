@@ -4,6 +4,7 @@ import { jsx } from "@emotion/core";
 import Section from "../components/section";
 
 import WebWorkExperience from "../components/fetchers/web-work-experience";
+import { slideTop, fadeIn } from "../helpers/animations";
 
 const IndexPage = () => (
 	<div
@@ -23,10 +24,17 @@ const IndexPage = () => (
 					fontSize: 36,
 					lineHeight: "50px",
 					maxWidth: 480,
+					animation: `${slideTop} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${fadeIn} 0.5s linear both`,
 				}}
 			>
 				Sometimes
-				<span css={{ fontFamily: "JosefinSans-BoldItalic", color: "#1242ed" }}>
+				<span
+					css={{
+						fontFamily: "JosefinSans-BoldItalic",
+						color: "#1242ed",
+						animation: `${fadeIn} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both`,
+					}}
+				>
 					{` magic `}
 				</span>
 				is just someone spending more time on something than anyone might
@@ -39,6 +47,7 @@ const IndexPage = () => (
 					paddingLeft: 8,
 					color: "#333333",
 					fontStyle: "italic",
+					animation: `${slideTop} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${fadeIn} 0.5s linear both`,
 				}}
 			>
 				- Teller

@@ -18,7 +18,13 @@ const WorkExperience = (props: WorkExperienceProps) => {
 	const { title, startDate, endDate, render } = props;
 
 	return (
-		<div css={{ marginBottom: 24 }}>
+		<div
+			css={{
+				marginBottom: 24,
+				animation:
+					"slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+			}}
+		>
 			<div css={{ display: "flex", justifyContent: "space-between" }}>
 				<h3 css={{ fontFamily: "Playfair Display", fontSize: 32 }}>{title}</h3>
 				<div>
