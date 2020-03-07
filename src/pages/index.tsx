@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "@emotion/core";
+import { jsx, Global, css } from "@emotion/core";
 
 import Section from "../components/section";
 
@@ -16,6 +16,13 @@ const IndexPage = () => (
 			scrollBehavior: "smooth",
 		}}
 	>
+		<Global
+			styles={css`
+				body {
+					overflow-y: "hidden";
+				}
+			`}
+		/>
 		<Section>
 			<h1 css={{ fontFamily: "Playfair Display", fontSize: 64 }}>Alex Su</h1>
 			<p
