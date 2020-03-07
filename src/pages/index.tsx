@@ -3,6 +3,8 @@ import { jsx } from "@emotion/core";
 
 import Section from "../components/section";
 
+import WebWorkExperience from "../components/fetchers/web-work-experience";
+
 const IndexPage = () => (
 	<div
 		css={{
@@ -51,7 +53,7 @@ const IndexPage = () => (
 				id="about"
 				css={{
 					fontFamily: "Playfair Display",
-					fontSize: 48,
+					fontSize: 64,
 				}}
 			>
 				About
@@ -95,9 +97,10 @@ const IndexPage = () => (
 			</div>
 		</Section>
 		<Section>
-			<h2 id="web" css={{ fontFamily: "Playfair Display", fontSize: 48 }}>
+			<h2 id="web" css={{ fontFamily: "Playfair Display", fontSize: 64 }}>
 				Web
 			</h2>
+			<WebWorkExperience domain="web" />
 		</Section>
 	</div>
 );
