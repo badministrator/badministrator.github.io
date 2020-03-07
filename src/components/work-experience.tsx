@@ -21,8 +21,6 @@ const WorkExperience = (props: WorkExperienceProps) => {
 		<div
 			css={{
 				marginBottom: 24,
-				animation:
-					"slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
 			}}
 		>
 			<div css={{ display: "flex", justifyContent: "space-between" }}>
