@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "Josefin Sans";
+	src: url("JosefinSans-Bold.otf");
+	font-weight: "bold";
+}
+
+@font-face {
+	font-family: "Josefin Sans";
+	src: url("JosefinSans-Regular.otf");
+	font-weight: "regular";
+}
+
+@font-face {
+	font-family: "Playfair Display";
+	src: url("PlayfairDisplay-Bold.woff2");
+	font-weight: "bold";
+}
+
+@font-face {
+	font-family: "Playfair Display";
+	src: url("PlayfairDisplay-Regular.woff2");
+	font-weight: "regular";
+}
+
+@font-face {
+	font-family: "JosefinSans-BoldItalic";
+	src: url("JosefinSans-BoldItalic.otf");
+}
