@@ -19,7 +19,8 @@ const IndexPage = () => (
 		<Global
 			styles={css`
 				body {
-					overflow-y: "hidden";
+					overflow-y: hidden;
+					margin: 0px;
 				}
 			`}
 		/>
