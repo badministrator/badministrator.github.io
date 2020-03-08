@@ -27,11 +27,14 @@ const Section = (props: SectionProps) => {
 		maxWidth: 1024,
 		marginLeft: "auto",
 		marginRight: "auto",
-		height: "100%",
-		paddingLeft: 8,
-		paddingRight: 8,
+		paddingLeft: 24,
+		paddingRight: 24,
 		paddingTop: 100,
 		paddingBottom: 50,
+		display: "flex",
+		flexDirection: "column",
+		justifyContent: "center",
+		minHeight: "100vh",
 	};
 
 	return (

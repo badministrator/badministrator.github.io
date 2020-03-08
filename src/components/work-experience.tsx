@@ -17,6 +17,7 @@ const WorkExperience = (props: WorkExperienceProps) => {
 		<div
 			css={{
 				marginBottom: 24,
+				maxWidth: 720,
 			}}
 		>
 			<div
@@ -30,13 +31,13 @@ const WorkExperience = (props: WorkExperienceProps) => {
 					css={{
 						fontFamily: "Playfair Display",
 						fontSize: 32,
-						margin: 0,
+						marginBottom: 8,
 					}}
 				>
 					{title}
 				</h3>
 				<div>
-					<div>{startDate}</div>
+					<div css={{ marginBottom: 4 }}>{startDate}</div>
 					<div>{endDate}</div>
 				</div>
 			</div>
@@ -48,7 +49,7 @@ const WorkExperience = (props: WorkExperienceProps) => {
 								fontSize: 18,
 								fontFamily: "Josefin Sans",
 								maxWidth: 720,
-								color: "#4a4a4a",
+								color: "#666666",
 								marginTop: 8,
 								marginBottom: 8,
 							}}

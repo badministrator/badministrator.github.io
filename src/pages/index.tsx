@@ -5,6 +5,8 @@ import Section from "../components/section";
 
 import WebWorkExperience from "../components/fetchers/web-work-experience";
 import { slideTop, fadeIn } from "../helpers/animations";
+import RightNavigation from "../components/landing-page/right-navigation";
+import CSSReset from "../helpers/css-reset";
 
 const IndexPage = () => (
 	<div
@@ -16,16 +18,19 @@ const IndexPage = () => (
 			scrollBehavior: "smooth",
 		}}
 	>
-		<Global
-			styles={css`
-				body {
-					overflow-y: hidden;
-					margin: 0px;
-				}
-			`}
+		<CSSReset />
+		<RightNavigation
+			links={[
+				{ name: "About", id: "#about" },
+				{ name: "Web", id: "#web" },
+			]}
 		/>
 		<Section>
-			<h1 css={{ fontFamily: "Playfair Display", fontSize: 64 }}>Alex Su</h1>
+			<h1
+				css={{ fontFamily: "Playfair Display", fontSize: 64, marginBottom: 32 }}
+			>
+				Alex Su
+			</h1>
 			<p
 				css={{
 					fontFamily: "Josefin Sans",
@@ -71,6 +76,7 @@ const IndexPage = () => (
 				css={{
 					fontFamily: "Playfair Display",
 					fontSize: 64,
+					marginBottom: 32,
 				}}
 			>
 				About
@@ -115,7 +121,10 @@ const IndexPage = () => (
 			</div>
 		</Section>
 		<Section>
-			<h2 id="web" css={{ fontFamily: "Playfair Display", fontSize: 64 }}>
+			<h2
+				id="web"
+				css={{ fontFamily: "Playfair Display", fontSize: 64, marginBottom: 32 }}
+			>
 				Web
 			</h2>
 			<WebWorkExperience domain="web" />
