@@ -1,11 +1,7 @@
 /** @jsx jsx */
-import { jsx, CSSObject } from "@emotion/core";
+import { jsx } from "@emotion/core";
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-
-import { ReactNode } from "react";
-
-type CSSFn = (currentStyles: CSSObject) => CSSObject;
 
 export interface WorkExperienceProps {
 	title: string;
@@ -23,8 +19,22 @@ const WorkExperience = (props: WorkExperienceProps) => {
 				marginBottom: 24,
 			}}
 		>
-			<div css={{ display: "flex", justifyContent: "space-between" }}>
-				<h3 css={{ fontFamily: "Playfair Display", fontSize: 32 }}>{title}</h3>
+			<div
+				css={{
+					display: "flex",
+					justifyContent: "space-between",
+					alignItems: "center",
+				}}
+			>
+				<h3
+					css={{
+						fontFamily: "Playfair Display",
+						fontSize: 32,
+						margin: 0,
+					}}
+				>
+					{title}
+				</h3>
 				<div>
 					<div>{startDate}</div>
 					<div>{endDate}</div>
@@ -38,8 +48,9 @@ const WorkExperience = (props: WorkExperienceProps) => {
 								fontSize: 18,
 								fontFamily: "Josefin Sans",
 								maxWidth: 720,
-								marginBottom: 10,
 								color: "#4a4a4a",
+								marginTop: 8,
+								marginBottom: 8,
 							}}
 							{...props}
 						/>

@@ -81,6 +81,7 @@ const IndexPage = () => (
 					fontSize: 24,
 					lineHeight: "36px",
 					maxWidth: 720,
+					animation: `${slideTop} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, ${fadeIn} 0.5s linear both`,
 				}}
 			>
 				<p>

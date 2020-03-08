@@ -5,6 +5,7 @@
 		}
 	],
 	"settings": {
-		"editor.minimap.maxColumn": 90
+		"editor.minimap.maxColumn": 90,
+		"prettier.useTabs": true
 	}
 }
