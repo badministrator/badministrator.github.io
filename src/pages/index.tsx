@@ -13,7 +13,7 @@ const IndexPage = () => (
 		css={{
 			height: "100vh",
 			overflowY: "scroll",
-			scrollSnapType: "y mandatory",
+			scrollSnapType: "y proximity",
 			overflowX: "hidden",
 			scrollBehavior: "smooth",
 		}}
